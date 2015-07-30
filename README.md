@@ -13,7 +13,7 @@ The original cachetools package is developed by Thomas Kemmer (c) and is
 available as MIT-Licensed free software, available from
 [GitHub](https://github.com/tkem/cachetools/ "cachetools repo") or PyPI.
 
-Currently, it only support methods with the definition signature of
+Currently, it only supports methods with the definition signature of
 ```python
     def method(self, arrayarg, *args, **kwargs):
 ```
@@ -54,13 +54,13 @@ instantiating `A`:
 >>> numpy.set_printoptions(precision=1)
 ```
 
-The following call, when first invoked, will stuck for a while:
+The following call, when first invoked, will hang for a while:
 ```python
 >>> print ta.frob(x)    # doctest: +NORMALIZE_WHITESPACE
 [ 14000005.2  28000006.2  42000007.2]
 ```
 
-But subsequent call with the same argument will be very fast:
+But subsequent calls with the same argument will be very fast:
 ```python
 >>> print ta.frob(x)    # doctest: +NORMALIZE_WHITESPACE
 [ 14000005.2  28000006.2  42000007.2]
