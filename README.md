@@ -81,6 +81,12 @@ After the first call to `ta.spam()`, it will have its own cache, too:
 {'frob': LRUCache(..., maxsize=64, currsize=1), 'spam': LFUCache(...)}
 ```
 
+Docstring of the decorated method is preserved as-is:
+```python
+>>> print ta.frob.__doc__
+Docstring for method frob is preserved.
+```
+
 ---
 
 Please see the file COPYING for copyright information.

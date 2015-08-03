@@ -68,6 +68,10 @@ After the first call to ta.spam(), it will have its own cache, too:
 >>> ta._cachedict       # doctest: +ELLIPSIS, +NORMALIZE_WHITESPACE
 {'frob': LRUCache(..., maxsize=64, currsize=1), 'spam': LFUCache(...)}
 
+Docstring of the decorated method is preserved as-is:
+>>> print ta.frob.__doc__
+Docstring for method frob is preserved.
+
 Author: Cong Ma <cong.ma@obspm.fr>, (c) 2015.  See the file COPYING.
 """
 
