@@ -5,13 +5,14 @@ particular interest in the methods that takes a `numpy.ndarray` argument.
 
 This little module is built on top of
 [`cachetools`](http://pythonhosted.org/cachetools/ "cachetools").  We provide
-an alternative to cachetools.cachedmethod by the method decorator factory
-`memoized`, with the particular target of a method that takes a `numpy.ndarray`
-argument.  It is adapted from the implementation of
-[`cachetools.cachedmethod`](http://pythonhosted.org/cachetools/#cachetools.cachedmethod).
-The original cachetools package is developed by Thomas Kemmer (c) and is
-available as MIT-Licensed free software, available from
-[GitHub](https://github.com/tkem/cachetools/ "cachetools repo") or PyPI.
+an alternative to
+[`cachetools.cachedmethod`](http://pythonhosted.org/cachetools/#cachetools.cachedmethod)
+by the method decorator factory `memoized`, with the particular target of a
+method that takes a `numpy.ndarray` argument.  It is adapted from the
+implementation of `cachetools.cachedmethod`.  The original cachetools package
+is developed by Thomas Kemmer (c) and is available as MIT-Licensed free
+software, available from [GitHub](https://github.com/tkem/cachetools/
+"cachetools repo") or PyPI.
 
 Currently, it only supports methods with the definition signature of
 ```python
