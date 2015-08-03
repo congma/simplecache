@@ -77,8 +77,10 @@ After the first call to `ta.spam()`, it will have its own cache, too:
 ```python
 >>> print "%.1f" % ta.spam(x)
 2744002861600508.0
->>> ta._cachedict       # doctest: +ELLIPSIS, +NORMALIZE_WHITESPACE
-{'frob': LRUCache(..., maxsize=64, currsize=1), 'spam': LFUCache(...)}
+>>> items = ta._cachedict.items()
+>>> items.sort()
+>>> print items         # doctest: +ELLIPSIS, +NORMALIZE_WHITESPACE
+[('frob', LRUCache(..., maxsize=64, currsize=1)), ('spam', LFUCache(...))]
 ```
 
 Docstring of the decorated method is preserved as-is:
