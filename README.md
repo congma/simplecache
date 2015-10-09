@@ -2,6 +2,11 @@
 particular interest in the methods that takes a `numpy.ndarray` argument.
 
 ---
+## Note ##
+
+This module is largely obsoleted by the `cachetools` version 1.1 update.
+
+---
 
 This little module is built on top of
 [`cachetools`](http://pythonhosted.org/cachetools/ "cachetools").  We provide
