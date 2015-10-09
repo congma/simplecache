@@ -131,7 +131,7 @@ def memoized(cachetype=cachetools.LRUCache, cachesize=64,
             # If no cache yet, create cache for this method.
             try:
                 # _cachedict is keyed by the method names, rather than the
-                # unrapped method objects themselves, although the latter is
+                # unwrapped method objects themselves, although the latter is
                 # possible.  We choose the former because this helps debugging
                 # better.  The original method, once wrapped, could be hard to
                 # access by a Python name, although one can still enumerate
